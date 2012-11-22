@@ -6,5 +6,9 @@ module.exports = {
 	Script: "script", //<script> tags
 	Style: "style", //<style> tags
 	Tag: "tag", //Any tag
-	CDATA: "cdata" //<![CDATA[ ... ]]>
+	CDATA: "cdata", //<![CDATA[ ... ]]>
+
+	isTag: function(elem){
+		return elem.type === "text" || elem.type === "script" || elem.type === "style";
+	}
 };
