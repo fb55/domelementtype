@@ -1,6 +1,6 @@
 {
   "name": "domelementtype",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "all the types of nodes in htmlparser2's dom",
   "main": "index.js",
   "repository": {
