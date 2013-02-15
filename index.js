@@ -9,6 +9,6 @@ module.exports = {
 	CDATA: "cdata", //<![CDATA[ ... ]]>
 
 	isTag: function(elem){
-		return elem.type === "text" || elem.type === "script" || elem.type === "style";
+		return elem.type === "tag" || elem.type === "script" || elem.type === "style";
 	}
 };
