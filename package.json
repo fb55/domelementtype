@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/FB55/domelementtype.git"
+    "url": "git://github.com/fb55/domelementtype.git"
   },
   "keywords": [
     "dom",
