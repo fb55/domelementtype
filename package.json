@@ -3,6 +3,10 @@
   "version": "1.2.0",
   "description": "all the types of nodes in htmlparser2's dom",
   "main": "index.js",
+	"licenses": [{
+			"type": "BSD",
+			"url": "https://github.com/fb55/domelementtype/blob/master/LICENSE"
+		}],
   "repository": {
     "type": "git",
     "url": "git://github.com/fb55/domelementtype.git"
