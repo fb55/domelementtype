@@ -2,7 +2,11 @@
     "name": "domelementtype",
     "version": "2.0.0",
     "description": "all the types of nodes in htmlparser2's dom",
-    "main": "index.js",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
+        "lib/**/*"
+    ],
     "repository": {
         "type": "git",
         "url": "git://github.com/fb55/domelementtype.git"
@@ -18,9 +22,6 @@
         "build": "tsc",
         "prepare": "npm run build"
     },
-    "files": [
-        "lib/**/*"
-    ],
     "author": "Felix Boehm <me@feedic.com>",
     "license": "BSD-2-Clause",
     "prettier": {
