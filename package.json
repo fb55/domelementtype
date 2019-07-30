@@ -18,6 +18,9 @@
         "build": "tsc",
         "prepare": "npm run build"
     },
+    "files": [
+        "lib/**/*"
+    ],
     "author": "Felix Boehm <me@feedic.com>",
     "license": "BSD-2-Clause",
     "prettier": {
