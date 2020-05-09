@@ -7,7 +7,7 @@ export const enum ElementType {
     Style = "style", //<style> tags
     Tag = "tag", //Any tag
     CDATA = "cdata", //<![CDATA[ ... ]]>
-    Doctype = "doctype"
+    Doctype = "doctype",
 }
 
 /**
