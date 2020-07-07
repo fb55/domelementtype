@@ -1,5 +1,5 @@
 /** Types of elements found in the DOM */
-export const enum ElementType {
+export enum ElementType {
     Text = "text", //Text
     Directive = "directive", //<? ... ?>
     Comment = "comment", //<!-- ... -->
