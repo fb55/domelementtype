@@ -2,6 +2,14 @@
     "name": "domelementtype",
     "version": "2.0.1",
     "description": "all the types of nodes in htmlparser2's dom",
+    "author": "Felix Boehm <me@feedic.com>",
+    "license": "BSD-2-Clause",
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/fb55"
+        }
+    ],
     "sideEffects": false,
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -23,8 +31,6 @@
         "build": "tsc",
         "prepare": "npm run build"
     },
-    "author": "Felix Boehm <me@feedic.com>",
-    "license": "BSD-2-Clause",
     "prettier": {
         "tabWidth": 4
     },
