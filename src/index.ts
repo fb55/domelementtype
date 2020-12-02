@@ -1,5 +1,7 @@
 /** Types of elements found in htmlparser2's DOM */
 export const enum ElementType {
+    /** Type for the root element of a document */
+    Root = "root",
     /** Type for Text */
     Text = "text",
     /** Type for <? ... ?> */
@@ -32,6 +34,8 @@ export function isTag(elem: { type: ElementType }): boolean {
 }
 
 // Exports for backwards compatibility
+/** Type for the root element of a document */
+export const Root = ElementType.Root;
 /** Type for Text */
 export const Text = ElementType.Text;
 /** Type for <? ... ?> */
