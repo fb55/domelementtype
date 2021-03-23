@@ -23,7 +23,7 @@
         // "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
         "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
         "resolveJsonModule": true,
-        "preserveConstEnums": true, /* https://github.com/fb55/domelementtype/pull/18#issuecomment-804507896 */
+        "preserveConstEnums": true /* https://github.com/fb55/domelementtype/pull/18#issuecomment-804507896 */
     },
     "include": ["src"],
     "exclude": [
