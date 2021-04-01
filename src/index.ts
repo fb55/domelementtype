@@ -1,5 +1,5 @@
 /** Types of elements found in htmlparser2's DOM */
-export const enum ElementType {
+export enum ElementType {
     /** Type for the root element of a document */
     Root = "root",
     /** Type for Text */
