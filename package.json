@@ -13,6 +13,11 @@
     "sideEffects": false,
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
+    "module": "lib/esm/index.js",
+    "exports": {
+        "require": "./lib/index.js",
+        "import": "./lib/esm/index.js"
+    },
     "files": [
         "lib/**/*"
     ],
@@ -22,13 +27,17 @@
     },
     "keywords": [
         "dom",
+        "element",
+        "types",
         "htmlparser2"
     ],
     "scripts": {
         "test": "npm run lint && prettier --check **/*.{ts,json,md}",
         "lint": "eslint src",
         "format": "prettier --write **/*.{ts,json,md}",
-        "build": "tsc",
+        "build": "npm run build:cjs && npm run build:esm",
+        "build:cjs": "tsc",
+        "build:esm": "tsc --module esnext --target es2019 --outDir lib/esm && echo '{\"type\":\"module\"}' > lib/esm/package.json",
         "prepare": "npm run build"
     },
     "prettier": {
