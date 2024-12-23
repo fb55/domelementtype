@@ -35,20 +35,20 @@ export function isTag(elem: { type: ElementType }): boolean {
 
 // Exports for backwards compatibility
 /** Type for the root element of a document */
-export const Root = ElementType.Root;
+export const Root: ElementType.Root = ElementType.Root;
 /** Type for Text */
-export const Text = ElementType.Text;
+export const Text: ElementType.Text = ElementType.Text;
 /** Type for <? ... ?> */
-export const Directive = ElementType.Directive;
+export const Directive: ElementType.Directive = ElementType.Directive;
 /** Type for <!-- ... --> */
-export const Comment = ElementType.Comment;
+export const Comment: ElementType.Comment = ElementType.Comment;
 /** Type for <script> tags */
-export const Script = ElementType.Script;
+export const Script: ElementType.Script = ElementType.Script;
 /** Type for <style> tags */
-export const Style = ElementType.Style;
+export const Style: ElementType.Style = ElementType.Style;
 /** Type for Any tag */
-export const Tag = ElementType.Tag;
+export const Tag: ElementType.Tag = ElementType.Tag;
 /** Type for <![CDATA[ ... ]]> */
-export const CDATA = ElementType.CDATA;
+export const CDATA: ElementType.CDATA = ElementType.CDATA;
 /** Type for <!doctype ...> */
-export const Doctype = ElementType.Doctype;
+export const Doctype: ElementType.Doctype = ElementType.Doctype;
