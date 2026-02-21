@@ -25,15 +25,16 @@ export enum ElementType {
  *
  * @param elem Element to test
  */
-export function isTag(elem: { type: ElementType }): boolean {
+export function isTag(element: { type: ElementType }): boolean {
     return (
-        elem.type === ElementType.Tag ||
-        elem.type === ElementType.Script ||
-        elem.type === ElementType.Style
+        element.type === ElementType.Tag ||
+        element.type === ElementType.Script ||
+        element.type === ElementType.Style
     );
 }
 
 // Exports for backwards compatibility
+/* eslint-disable prefer-destructuring */
 /** Type for the root element of a document */
 export const Root: ElementType.Root = ElementType.Root;
 /** Type for Text */
@@ -52,3 +53,4 @@ export const Tag: ElementType.Tag = ElementType.Tag;
 export const CDATA: ElementType.CDATA = ElementType.CDATA;
 /** Type for <!doctype ...> */
 export const Doctype: ElementType.Doctype = ElementType.Doctype;
+/* eslint-enable prefer-destructuring */
