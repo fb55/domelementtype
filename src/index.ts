@@ -34,23 +34,30 @@ export function isTag(element: { type: ElementType }): boolean {
 }
 
 // Exports for backwards compatibility
-/* eslint-disable prefer-destructuring */
 /** Type for the root element of a document */
+// eslint-disable-next-line prefer-destructuring
 export const Root: ElementType.Root = ElementType.Root;
 /** Type for Text */
+// eslint-disable-next-line prefer-destructuring
 export const Text: ElementType.Text = ElementType.Text;
 /** Type for <? ... ?> */
+// eslint-disable-next-line prefer-destructuring
 export const Directive: ElementType.Directive = ElementType.Directive;
 /** Type for <!-- ... --> */
+// eslint-disable-next-line prefer-destructuring
 export const Comment: ElementType.Comment = ElementType.Comment;
 /** Type for <script> tags */
+// eslint-disable-next-line prefer-destructuring
 export const Script: ElementType.Script = ElementType.Script;
 /** Type for <style> tags */
+// eslint-disable-next-line prefer-destructuring
 export const Style: ElementType.Style = ElementType.Style;
 /** Type for Any tag */
+// eslint-disable-next-line prefer-destructuring
 export const Tag: ElementType.Tag = ElementType.Tag;
 /** Type for <![CDATA[ ... ]]> */
+// eslint-disable-next-line prefer-destructuring
 export const CDATA: ElementType.CDATA = ElementType.CDATA;
 /** Type for <!doctype ...> */
+// eslint-disable-next-line prefer-destructuring
 export const Doctype: ElementType.Doctype = ElementType.Doctype;
-/* eslint-enable prefer-destructuring */
