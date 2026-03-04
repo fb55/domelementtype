@@ -1,4 +1,5 @@
 {
+    "type": "commonjs",
     "name": "domelementtype",
     "version": "2.3.0",
     "description": "all the types of nodes in htmlparser2's dom",
@@ -15,8 +16,8 @@
     "types": "lib/index.d.ts",
     "module": "lib/esm/index.js",
     "exports": {
-        "require": "./lib/index.js",
-        "import": "./lib/esm/index.js"
+        "import": "./lib/esm/index.js",
+        "require": "./lib/index.js"
     },
     "files": [
         "lib/**/*"
@@ -32,23 +33,25 @@
         "htmlparser2"
     ],
     "scripts": {
-        "test": "npm run lint && prettier --check **/*.{ts,json,md}",
-        "lint": "eslint src",
-        "format": "prettier --write **/*.{ts,json,md}",
         "build": "npm run build:cjs && npm run build:esm",
         "build:cjs": "tsc",
         "build:esm": "tsc --module esnext --target es2019 --outDir lib/esm && echo '{\"type\":\"module\"}' > lib/esm/package.json",
-        "prepare": "npm run build"
-    },
-    "prettier": {
-        "tabWidth": 4
+        "format": "npm run format:es && npm run format:biome",
+        "format:biome": "biome check --write .",
+        "format:es": "npm run lint:es -- --fix",
+        "lint": "npm run lint:es && npm run lint:biome",
+        "lint:biome": "biome check .",
+        "lint:es": "eslint .",
+        "prepare": "npm run build",
+        "test": "npm run lint"
     },
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^8.18.1",
-        "@typescript-eslint/parser": "^8.18.1",
-        "eslint": "^8.12.0",
-        "eslint-config-prettier": "^9.1.0",
-        "prettier": "^3.4.2",
-        "typescript": "^5.7.2"
+        "@biomejs/biome": "^2.4.4",
+        "@eslint/compat": "^2.0.2",
+        "@feedic/eslint-config": "^0.2.3",
+        "eslint": "^10.0.1",
+        "eslint-config-biome": "^2.1.3",
+        "typescript": "^5.7.2",
+        "typescript-eslint": "^8.56.0"
     }
 }
