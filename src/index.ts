@@ -22,8 +22,8 @@ export enum ElementType {
 
 /**
  * Tests whether an element is a tag or not.
- *
  * @param element Element to test
+ * @param element.type Node type discriminator to check.
  */
 export function isTag(element: { type: ElementType }): boolean {
     return (
