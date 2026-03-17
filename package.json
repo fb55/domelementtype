@@ -1,7 +1,7 @@
 {
     "type": "module",
     "name": "domelementtype",
-    "version": "2.3.0",
+    "version": "3.0.0",
     "description": "all the types of nodes in htmlparser2's dom",
     "author": "Felix Boehm <me@feedic.com>",
     "license": "BSD-2-Clause",
