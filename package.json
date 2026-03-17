@@ -1,5 +1,5 @@
 {
-    "type": "commonjs",
+    "type": "module",
     "name": "domelementtype",
     "version": "2.3.0",
     "description": "all the types of nodes in htmlparser2's dom",
@@ -12,15 +12,16 @@
         }
     ],
     "sideEffects": false,
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
-    "module": "lib/esm/index.js",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "exports": {
-        "import": "./lib/esm/index.js",
-        "require": "./lib/index.js"
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        }
     },
     "files": [
-        "lib/**/*"
+        "dist/**/*"
     ],
     "repository": {
         "type": "git",
@@ -32,10 +33,11 @@
         "types",
         "htmlparser2"
     ],
+    "engines": {
+        "node": ">=20.19.0"
+    },
     "scripts": {
-        "build": "npm run build:cjs && npm run build:esm",
-        "build:cjs": "tsc",
-        "build:esm": "tsc --module esnext --target es2019 --outDir lib/esm && echo '{\"type\":\"module\"}' > lib/esm/package.json",
+        "build": "tsc",
         "format": "npm run format:es && npm run format:biome",
         "format:biome": "biome check --write .",
         "format:es": "npm run lint:es -- --fix",
